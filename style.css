@@ -1,0 +1,587 @@
+/* Definition d'une variable de couleur qui nous permetra de changer plus vite plus tard */
+:root{
+    --darkgray: #2D2D2A;
+    --lightgray: #4C4C47;
+    --pseudowhite: #EAF2EF;
+    --brightred: #DF3B57;
+    --darkred: #CC2936;
+    --txthover:rgb(0, 0, 0);
+    --liens: rgb(37, 80, 130);
+    --list1publication: rgb(37, 80, 130);
+    --list2publication: rgb(204,41 ,54 );
+    --formbackground: rgb(217, 217,217);
+    --formborder: rgb(115, 117, 113);
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Background */
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--pseudowhite);
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* NAV BAR CSS */
+.navBar{
+    display: flex;
+    background-color: var(--darkred);
+}
+
+.navUl{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    flex-grow: 1;
+}
+
+.navTab{
+    align-items: center;
+    list-style: none;
+    margin-top: 1%;
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+    position: relative; 
+
+}
+
+#buttonacceauil{
+    background-color: var(--darkred);
+    border: none;
+    border-radius: 5px;
+}
+
+.navLink:hover{
+    background-color: var(--brightred);
+    border-radius: 5px;
+    color: var(--txthover);
+    height: 25%;
+}
+
+.navLink{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
+
+.navImg{
+    list-style: none;
+    margin-right: 1em;
+    height: 3.8em;
+    width: 8.9em;
+}
+
+.navImg1{
+    list-style: none;
+    height: 35%;
+    width: auto;
+    opacity: 0.6;
+    vertical-align:text-bottom;
+
+}
+
+/* a:-webkit-any-link {
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+/* Sous menu */
+.hasSubmenu > a {
+    white-space: nowrap;
+    position: relative;
+}
+
+.hasSubmenu:hover .sousTab {
+    display: block;
+    left:-2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sousTab {
+    width: auto;
+    min-width: 110%;
+    display: none;
+    position: absolute;
+    background-color: var(--darkred);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sousnavTab {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.sousnavTab:hover {
+    background-color: var(--brightred);
+    border-radius: 5px;
+    color: var(--txthover);
+}
+
+/* Acceuil */
+#acceuil{
+    padding-left: 4em;        
+    padding-top: 2em;
+}
+
+#buttonacceuil{
+    margin-left: 4em;
+    border-radius: 5px;
+    background-color: var(--darkred);
+    border: none;
+    font-size: 1em;
+    height: 1.5em;
+}
+
+#buttonacceuil:hover{
+    background-color: var(--brightred);
+    color: var(--txthover);
+    cursor: pointer;
+}
+
+.listeacceuil{
+    padding-bottom: 1em;
+}
+
+.lienacceuil{
+    text-decoration: none;
+    color: var(--liens);
+}
+
+.imgacceuil{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    padding-left: 4em;
+    padding-bottom: 8em;
+}
+
+/* Thematiques */
+
+.pthematiques{
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+.p1thematiques{
+    padding-left: 4em;
+}
+
+.Tthematiques{
+    padding-left: 4em;
+}
+
+/* Plateformes */
+
+
+#plateformes1{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-auto-flow: row;
+}
+
+#plateformes2{
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-template-rows: 1fr ;
+    grid-auto-flow: row;
+}
+.pplateformes{
+    padding-left: 4em;
+}
+
+.pplateformes1{
+    padding-left: 1em;
+}
+
+.Tplateformes{
+    padding-left: 4em;
+}
+
+.imgplateformes{
+    width: 80%;
+    height: auto;
+    padding-left: 1em;
+}
+
+
+.Imgplateformes{
+    width: 100%;
+    height: auto;
+}
+
+/* Membres */
+
+#membres{
+    padding-left: 4em;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4em;
+}
+
+.card1{
+    border-style: ridge;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.pmembres{
+    text-align: center;
+}
+
+.ulmembres{
+    list-style: none;
+    text-align: center;
+    padding-left:0px;
+}
+
+.linkmembres{
+    text-decoration: none;
+    text-align: center;
+}
+
+.imgmembres{
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+}
+
+/* Projets */
+
+.T1projets{
+    padding-left: 2em;
+}
+
+.Tprojets{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 6em;
+}
+
+.ulprojets{
+    list-style: square;
+    padding-left: 8em;
+}
+
+/* Publications */
+
+#publications{
+    padding-left: 4em;
+}
+
+.Tpublications{
+    padding-left: 4em;
+}
+
+.linkpublications{
+    text-decoration: underline ;
+    text-underline-offset: 2px;
+    color: var(--txthover);
+}
+.lipublications1{
+    list-style-type: square;
+}
+.lipublications1::marker{
+    color: var(--list1publication);
+}
+
+.lipublications2{
+    list-style-type: square;
+}
+
+.lipublications2::marker{
+    color: var(--list2publication);
+}
+
+/* Partenaires */
+
+.PartenairesNationaux{
+    padding-left: 8em;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.T1partenaires{
+    padding-left: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.PN1{
+    height:5em;
+    width: auto; 
+}
+
+.PN1:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN2{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN2:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN3{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN3:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN4{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN4:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN5{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN5:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN6{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN6:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN7{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN7:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PN8{
+    height:5em;
+    width: auto; 
+
+}
+
+.PN8:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PartenairesInternationaux{
+    padding-left: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+
+.PI1{
+    height:5em;
+    width: auto; 
+
+}
+
+.PI1:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.PI2{
+    height:5em;
+    width: auto; 
+
+}
+
+.PI2:hover{
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+/* Contact */
+
+#contact{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+}
+
+.formulaire{
+    padding-left: 4em;
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 167px 50px;
+    grid-row-gap: 0.5em;
+}
+
+.NomPrenom{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: var(--formborder);
+    border-width: 2px;
+    background-color: var(--formbackground);
+}
+
+.imgform{
+    list-style: none;
+    height: 80%;
+    width: auto;
+    opacity: 0.6;
+    vertical-align:text-bottom;
+    padding-top: 0.4em;
+}
+
+.nomprenom{
+    width: 28.45em;
+    height: 3.3em;
+    border-left: 2px solid var(--formborder);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.Mail{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: var(--formborder);
+    border-width: 2px;
+    background-color: var(--formbackground);
+}
+
+.formtext{
+    padding-top: 0.8em;
+    padding-left: 0.67em;
+    padding-right: 0.67em;
+
+}
+.email{
+    width: 28.45em;
+    height: 3.3em;
+    border-left: 2px solid var(--formborder);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.Mail{
+    display: flex;
+    flex-direction: row;
+}
+
+.message{
+    border: 2px solid var(--formborder);
+}
+.send{
+    float: right;
+    height: 2em;
+    width: 4em;
+    font-weight: bold;
+    background-color: var(--darkred);
+    border-radius: 5px;
+}
+
+.send:hover{
+    background-color: var(--brightred);
+    color: var(--txthover);
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: var(--darkred);
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#container{
+    min-height: 100%;
+    position: relative;
+}
+
+.footersites{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.programeurs{
+    list-style: none;
+    padding-left: 2em;
+}
+
+.programeur{
+    list-style: none;
+    padding-bottom: 0.5em;
+}
+
+.footerimg{
+    opacity: 0.7;
+    width: 4px;
+    margin-left: 1em;
+    padding-right: 0%;
+}
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
